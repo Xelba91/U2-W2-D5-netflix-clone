@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- aggiunto cdn delle icone di bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- aggiunto font simile: Martel Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profilo</title>
+  </head>
+  <body>
+    <div class="container-fluid py-4">
+      <a href="./index.html" target="_blank">
+        <img src="./assets/netflix_logo.png" alt="Netflix logo" width="110px" />
+      </a>
+    </div>
+
+    <!-- ! EDITOR -->
+    <div class="netflix-container justify-content-center">
+      <div cla>
+        <h1 class="fw-bold">Edit Profile</h1>
+        <hr />
+        <div class="d-flex pe-5">
+          <div class="me-3">
+            <div class="position-relative">
+              <img src="./assets/avatar.png" alt="avatar" width="120px" />
+              <span class="position-absolute bottom-0 start-0 ms-3 mt4 translate-middle badge rounded-pill bg-black">
+                <i class="bi bi-pencil-fill"></i
+              ></span>
+            </div>
+          </div>
+          <div class="flex-grow-1">
+            <div class="bg-secondary">
+              <p class="fs-4 fw-bold p-2">Xelba</p>
+            </div>
+            <p class="mb-1">Language:</p>
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-secondary text-white dropdown-toggle py-0"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Italian</a></li>
+                <li><a class="dropdown-item" href="#">French</a></li>
+              </ul>
+            </div>
+            <hr />
+            <p class="mb-3">Maturity Settings:</p>
+            <div class="bg-dark text-white fs-6 p-2 fw-bold d-inline-block mb-3">ALL MATURITY RATINGS</div>
+            <p>Show titles of all maturity ratings for this profile.</p>
+            <button type="button" class="btn btn-outline-secondary px-4 mb-2">EDIT</button>
+            <hr />
+            <p>Autoplay controls</p>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="autoNext" />
+              <label class="form-check-label" for="autoNext">Autoplay next episode in a series on all devices.</label>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="autoPrev" />
+              <label class="form-check-label" for="autoPrev">Autoplay previews while browsing on all devices.</label>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="d-flex">
+          <button type="button" class="btn btn-outline-secondary px-4 me-4 fs-5 active">SAVE</button>
+          <button type="button" class="btn btn-outline-secondary px-4 me-4 fs-5">CANCEL</button>
+          <button type="button" class="btn btn-outline-secondary px-4 me-4 fs-5">DELETE PROFILE</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

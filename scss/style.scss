@@ -1,0 +1,41 @@
+@import "./partials/reset";
+@import "./partials/bootstrap-overrides";
+.preview-container {
+  overflow-x: hidden;
+  img {
+    width: 250px;
+  }
+}
+
+.preview-container2 {
+  // overflow-x: hidden;
+  img {
+    width: 250px;
+  }
+  transition: left 1s;
+}
+
+header div div a i {
+  &:hover {
+    border: 1px solid white !important;
+    color: white;
+  }
+}
+
+.carousel-inner {
+  // display: flex;
+  overflow: visible;
+}
+.carousel {
+  // flex: 0 0 33%;
+  // display: block;
+  // margin-right: 0;
+  overflow: hidden;
+}
+.negative-margin {
+  margin-top: 10px;
+  margin-left: -119px;
+}
+body {
+  font-family: "Martel Sans", sans-serif;
+}

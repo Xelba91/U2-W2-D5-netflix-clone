@@ -1,0 +1,18 @@
+{
+  "name": "u2-w2-d4-sass-recap---esercizio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass scss/style.scss css/style.css -w"
+  },
+  "devDependencies": {
+    "sass": "^1.71.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  }
+}
