@@ -4,13 +4,21 @@ let scrollPosition = 0;
 let scrollStr;
 
 const prevScroll = (event) => {
-  scrollPosition += cardWidth;
+  if (scrollPosition == 0) {
+    scrollPosition += 0;
+  } else {
+    scrollPosition += cardWidth;
+  }
   console.log(scrollPosition);
   document.querySelector(".carousel-inner").style.left = scrollPosition + "px";
 };
 
 const nextScroll = (event) => {
-  scrollPosition -= cardWidth;
+  if (scrollPosition == -1500) {
+    scrollPosition += 0;
+  } else {
+    scrollPosition -= cardWidth;
+  }
   console.log(scrollPosition);
   document.querySelector(".carousel-inner").style.left = scrollPosition + "px";
 };
